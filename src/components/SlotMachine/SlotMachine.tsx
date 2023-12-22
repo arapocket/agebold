@@ -68,7 +68,6 @@ export const SlotMachine: FC = () => {
       }
 
       setTokens(Math.max(0, newTokenBalance));
-      console.log(uniqueSymbols, newTokenBalance);
     }
   };
 
@@ -83,7 +82,7 @@ export const SlotMachine: FC = () => {
       {!sufficientTokens && (
         <button
           onClick={onPressPlayAgain}
-          className={`${'text-2xl text-green-500  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 p-2 rounded-md'} `}
+          className={`${'text-2xl text-green-500 dark:md:hover:bg-fuchsia-600  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 p-2 rounded-md'} `}
         >
           {'Play again?'}
         </button>
