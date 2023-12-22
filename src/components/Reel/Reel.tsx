@@ -7,7 +7,9 @@ export const Reel: FC<{
   index: number;
   position: ReelPosition;
   symbol: string;
-}> = ({ index, position, symbol }) => {
+  winnings: boolean;
+  lost: boolean;
+}> = ({ index, position, symbol, winnings, lost }) => {
   const reelPosition = {
     center: 'border-r-4 border-l-4',
     left: '',
@@ -15,7 +17,12 @@ export const Reel: FC<{
   };
 
   return symbol ? (
-    <div key={index} className={`p-10 text-4xl ${reelPosition[position]}`}>
+    <div
+      key={index}
+      className={`p-10 text-4xl ${reelPosition[position]} ${
+        winnings ? ' border-green-500' : lost ? 'border-red-600' : ''
+      }`}
+    >
       {symbol}
     </div>
   ) : null;

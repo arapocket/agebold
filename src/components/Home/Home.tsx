@@ -7,8 +7,7 @@ export const HomeContent: FC = () => {
   return (
     <NoSSR>
       <div className="w-full items-center justify-between font-mono">
-        <div className="text-center text-4xl p-20">Slots</div>
-
+        <div className="text-center text-4xl pb-10 pt-20 px-10">Slots</div>
         <SlotMachine />
       </div>
     </NoSSR>
