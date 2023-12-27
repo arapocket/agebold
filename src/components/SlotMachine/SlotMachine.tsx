@@ -127,9 +127,9 @@ export const SlotMachine: FC = () => {
       <button
         onClick={onPressSpin}
         disabled={!sufficientTokens}
-        className={`animate-pulse transition delay-150 hover:-translate-y-1 hover:animate-none hover:scale-110 ${
+        className={`transition delay-150 hover:-translate-y-1 hover:animate-none hover:scale-110 ${
           sufficientTokens
-            ? 'text-2xl text-blue-500  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 p-2 rounded-md'
+            ? 'animate-pulse text-2xl text-blue-500  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 p-2 rounded-md'
             : 'text-red-600 text-2xl'
         } `}
       >
